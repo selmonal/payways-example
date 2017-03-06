@@ -1,0 +1,3 @@
+[submodule "payways"]
+	path = payways
+	url = git@github.com:selmonal/payways.git
