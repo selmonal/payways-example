@@ -30,6 +30,13 @@ return [
             'returnUrl'  => 'payways/state',
         ],
 
+        'tdb' => [
+            'server'      => env('TDB_SERVER', 'https://www.bankcard.mn:443/shopindex.jsp'),
+            'public_cert' => storage_path('payways/public.cert'),
+            'merchantId'  => env('TDB_MERCHANT'),
+            'currency'    => env('TDB_CURRENCY', 'mnt'),
+            'returnUrl'   => 'payways/tdb',
+        ]
     ],
 
     'user' => [

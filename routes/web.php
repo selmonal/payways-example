@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::post('/donate', 'DonationController@store');
+
+Route::any('payways/{gateway}', 'PaymentCallbackController@handleCallback');
